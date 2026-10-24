@@ -1,0 +1,175 @@
+
+/* TuneTrack - Music Playlist Manager */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 35px 24px;
+}
+
+/* Header */
+h1 {
+  color: #60a5fa;
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  color: #f8fafc;
+  margin-bottom: 18px;
+  font-size: 22px;
+}
+
+p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+header {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #334155;
+}
+
+/* Main sections */
+form,
+.playlist {
+  background: #1e293b;
+  padding: 24px;
+  margin: 22px 0;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px #00000020;
+}
+
+/* Form fields */
+label {
+  display: block;
+  margin-top: 12px;
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 8px;
+  background: #0f172a;
+  color: #f8fafc;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px #3b82f625;
+}
+
+/* Buttons */
+button {
+  padding: 11px 18px;
+  margin-top: 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.song button {
+  margin-top: 10px;
+  background: #dc2626;
+  padding: 8px 14px;
+}
+
+.song button:hover {
+  background: #b91c1c;
+}
+
+/* Playlist song cards */
+.song {
+  background: #0f172a;
+  padding: 18px;
+  margin: 12px 0;
+  border: 1px solid #334155;
+  border-radius: 10px;
+}
+
+.song h3 {
+  color: #60a5fa;
+  margin-bottom: 8px;
+}
+
+.song p {
+  margin: 4px 0;
+}
+
+/* Messages */
+.error {
+  color: #fca5a5;
+  background: #7f1d1d30;
+  border: 1px solid #991b1b;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.success {
+  color: #86efac;
+  background: #14532d40;
+  border: 1px solid #166534;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+/* Links */
+a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .container {
+    padding: 22px 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  form,
+  .playlist {
+    padding: 16px;
+  }
+}
